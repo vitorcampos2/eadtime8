@@ -23,7 +23,7 @@ public class JFramePrincipal extends javax.swing.JFrame {
         jMenuSistema = new javax.swing.JMenu();
         jMenuItemSair = new javax.swing.JMenuItem();
         jMenuCadastro = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
         jMenuAjuda = new javax.swing.JMenu();
         jMenuItemSobre = new javax.swing.JMenuItem();
 
@@ -47,13 +47,13 @@ public class JFramePrincipal extends javax.swing.JFrame {
         jMenuCadastro.setMnemonic('C');
         jMenuCadastro.setText("Cadastro");
 
-        jMenuItem1.setText("Processos...");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItem2.setText("Alunos");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                jMenuItem2ActionPerformed(evt);
             }
         });
-        jMenuCadastro.add(jMenuItem1);
+        jMenuCadastro.add(jMenuItem2);
 
         jMenuBarPrincipal.add(jMenuCadastro);
 
@@ -96,14 +96,16 @@ public class JFramePrincipal extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_jMenuItemSairActionPerformed
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        JDialogListagemAluno dialogo = new JDialogListagemAluno((JFramePrincipal) this.getParent(), true);
+        dialogo.setVisible(true);
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu jMenuAjuda;
     private javax.swing.JMenuBar jMenuBarPrincipal;
     private javax.swing.JMenu jMenuCadastro;
-    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItemSair;
     private javax.swing.JMenuItem jMenuItemSobre;
     private javax.swing.JMenu jMenuSistema;
